@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_Atelier">
+
+    <fragment
+        android:id="@+id/nav_Atelier"
+        android:name="ca.fatim.douguifirst.ui.home.AtelierFragment"
+        android:label="@string/menu_Atelier"
+        tools:layout="@layout/fragment_atelier" />
+
+    <fragment
+        android:id="@+id/nav_Map"
+        android:name="ca.fatim.douguifirst.ui.politique.PolitiqueFragment"
+        android:label="@string/menu_Map_Atelier"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/nav_transfert_data"
+        android:name="ca.fatim.douguifirst.ui.transfertData.TransfertDataFragment"
+        android:label="@string/menu_Transfert_donnees"
+        tools:layout="@layout/fragment_transfert_data" />
+
+    <fragment
+        android:id="@+id/nav_politique"
+        android:name="ca.fatim.douguifirst.ui.transfertData.TransfertDataFragment"
+        android:label="@string/menu_politique"
+        tools:layout="@layout/fragment_politique" />
+</navigation>

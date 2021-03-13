@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Atelier"
+            android:icon="@drawable/ic_baseline_save_24"
+            android:title="@string/menu_Atelier" />
+        <item
+            android:id="@+id/nav_Map"
+            android:icon="@drawable/ic_baseline_location_on_24"
+            android:title="@string/menu_Map_Atelier" />
+        <item
+            android:id="@+id/nav_transfert_data"
+            android:icon="@drawable/ic_baseline_import_export_24"
+            android:title="@string/menu_Transfert_donnees" />
+
+        <item
+            android:id="@+id/nav_politique"
+            android:icon="@drawable/ic_baseline_bookmark_added_24"
+            android:title="@string/menu_politique" />
+    </group>
+</menu>

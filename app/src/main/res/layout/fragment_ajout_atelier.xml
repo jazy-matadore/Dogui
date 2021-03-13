@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FragmentAjoutAtelier">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|top"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/Exemple_medium_margin"
+        tools:context=".FragmentAjoutAtelier">
+
+        <TextView
+            android:paddingTop="300dp"
+            android:id="@+id/renttextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="@string/item_formulaire_ajout_atelier"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:id="@+id/editTextNomResponsable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/nom_Responsable_Atelier"
+
+            />
+
+        <EditText
+            android:id="@+id/editTextNomAtelier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/nom_Atelier" />
+
+        <EditText
+            android:id="@+id/editTextContactAtelier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName|phone"
+            android:text="@string/contact_Atelier" />
+
+        <EditText
+            android:id="@+id/editTextSiteAtelier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none|textWebEmailAddress"
+            android:text="@string/site_Atelier" />
+
+        <EditText
+            android:id="@+id/editTextAdresseAtelier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none|textMultiLine|textPostalAddress"
+            android:text="@string/adresse_Atelier" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextLongitude"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none|numberDecimal"
+            android:text="@string/longitude_Atelier" />
+
+        <EditText
+            android:id="@+id/editTextLatitudeAtelier"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/editTextLongitude"
+            android:ems="10"
+            android:inputType="none|numberDecimal"
+            android:text="@string/latitude_Atelier"
+            android:textAllCaps="true"
+            android:textColor="#100F0F" />
+
+            <ImageButton
+                android:id="@+id/imageBtnAtualisationGPS"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/editTextLatitudeAtelier"
+                android:background="#031E1D1D"
+                android:src="@android:drawable/stat_notify_sync"
+                android:tint="#FF5722" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextSpecialiteAtelier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine|textPersonName"
+            android:text="@string/specialite_Atelier"
+            android:textColorHint="#FFFFFF"
+            />
+
+        <Button
+            android:id="@+id/btnEnregistrerAtelier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center|bottom"
+            android:text="@string/btn_enregistrer_atelier"
+            app:backgroundTint="#507A1F" />
+
+
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+</FrameLayout>

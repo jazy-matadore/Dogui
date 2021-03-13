@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">DOUGUIfirst</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Dougui</string>
+    <string name="nav_header_subtitle">www.dougui.gn</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="menu_Atelier">Enroller un atelier</string>
+    <string name="menu_Map_Atelier">Accéder à la Map des ateliers</string>
+    <string name="menu_Transfert_donnees">Transfert des données</string>
+    <string name="menu_politique">Politique de notation</string>
+    <string name="item_default_nom_atelier">Taillor Salon</string>
+    <string name="item_default_adresse_atelier">Ka 017 rue sansfil B7A12</string>
+    <string name="item_default_note_atelier">Note</string>
+    <string name="item_default_contenu_note_atelier">6,4</string>
+    <!-- Entete du Fragment Ajout d'atelier -->
+    <string name="item_formulaire_ajout_atelier">Formulaire d\'ajout d\'un atelier</string>
+    <string name="nom_Responsable_Atelier">Responsable</string>
+    <string name="nom_Atelier">Atelier</string>
+    <string name="contact_Atelier">Contacts</string>
+    <string name="site_Atelier">Site</string>
+    <string name="adresse_Atelier">Adresse</string>
+    <string name="longitude_Atelier">L</string>
+    <string name="latitude_Atelier">l</string>
+    <string name="specialite_Atelier">Domaine d\'intervention (spécialité)</string>
+    <string name="btn_enregistrer_atelier">Enregistrer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

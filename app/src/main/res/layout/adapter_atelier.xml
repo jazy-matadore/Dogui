@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/Exemple_medium_margin"
+
+    android:orientation="horizontal"
+    android:background="@drawable/arrondir">
+
+    <ImageView
+        android:id="@+id/item_at13"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/at13"
+       />
+
+    <RelativeLayout
+        android:layout_width="266dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_nom_atelier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_default_nom_atelier"
+            android:textColor="@color/orange_moy"
+            android:textSize="@dimen/tv_nom_atelier_text_size" />
+
+        <TextView
+            android:id="@+id/tv_adresse_atelier"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_below="@+id/tv_nom_atelier"
+            android:text="@string/item_default_adresse_atelier"
+            android:textColor="@color/black"
+            android:textSize="@dimen/standard_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="67dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_note_atelier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/item_default_note_atelier"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/standard_text_size" />
+
+        <TextView
+            android:id="@+id/tv_contenu_note_atelier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_note_atelier"
+            android:layout_marginTop="1dp"
+            android:text="@string/item_default_contenu_note_atelier"
+            android:textAllCaps="true"
+            android:textColor="@color/orange_moy"
+            android:textSize="@dimen/standard_text_size" />
+    </RelativeLayout>
+
+
+</LinearLayout>
