@@ -79,7 +79,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="none|numberDecimal"
-            android:hint="@string/longitude_Atelier" />
+            android:hint="@string/longitude_Atelier"
+            android:background="@android:drawable/editbox_background"/>
 
         <EditText
             android:id="@+id/editTextLatitudeAtelier"
@@ -89,6 +90,7 @@
             android:ems="10"
             android:inputType="none|numberDecimal"
             android:hint="@string/latitude_Atelier"
+            android:background="@android:drawable/editbox_background"
             android:textAllCaps="true"
             android:textColor="#100F0F" />
 
@@ -110,6 +112,7 @@
             android:ems="10"
             android:inputType="textMultiLine|textPersonName"
             android:text="@string/specialite_Atelier"
+            android:background="@android:drawable/editbox_background"
             android:textColorHint="#FFFFFF"
             />
 
