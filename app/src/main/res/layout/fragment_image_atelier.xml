@@ -15,9 +15,7 @@
         android:id="@+id/iv_image_atelier"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-
-        android:layout_gravity="left
-" />
+        android:layout_gravity="left" />
 
         <Button
             android:id="@+id/btnCamera"
@@ -28,7 +26,8 @@
             android:layout_alignRight="@id/iv_image_atelier"
             android:layout_marginTop="0dp"
             app:backgroundTint="#F44336"
-            app:icon="@android:drawable/ic_menu_camera" />
+            app:icon="@android:drawable/ic_menu_camera"
+            />
 
         <TextView
             android:id="@+id/textView2"
