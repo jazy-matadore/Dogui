@@ -29,4 +29,6 @@
         android:layout_below="@id/fragment_formulaire_ajout"
         android:text="@string/btn_enregistrer_atelier"
         app:backgroundTint="#507A1F" />
+
+
 </RelativeLayout>
