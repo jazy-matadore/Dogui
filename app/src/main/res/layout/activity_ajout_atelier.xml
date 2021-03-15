@@ -20,13 +20,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/fragment_image_atelier"
         tools:layout="@layout/fragment_ajout_atelier" />
+
     <Button
         android:id="@+id/btnEnregistrerAtelier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_gravity="center|bottom"
-        android:text="@string/btn_enregistrer_atelier"
+        android:layout_centerInParent="true"
         android:layout_below="@id/fragment_formulaire_ajout"
+        android:text="@string/btn_enregistrer_atelier"
         app:backgroundTint="#507A1F" />
 </RelativeLayout>
