@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "881873780450",
+    "project_id": "dougui-faaa1",
+    "storage_bucket": "dougui-faaa1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881873780450:android:c2078e3dd318589e82a8bb",
+        "android_client_info": {
+          "package_name": "ca.fatim.douguifirst"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881873780450-rn4d1iv1524cc8nv4ostepdsj0srvoai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfx4IjOqY8HonM8Jc5QTGLxnfSZxosQ2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881873780450-rn4d1iv1524cc8nv4ostepdsj0srvoai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

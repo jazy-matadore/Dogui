@@ -1,11 +1,18 @@
 package ca.fatim.douguifirst.adapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.List;
 
@@ -18,12 +25,17 @@ public class AtelierAdapter extends BaseAdapter {
     private LayoutInflater inflater;
     private Context context;
     private List<Atelier> listeAtelier;
+    //Accès à FirebaseStorage
+    private FirebaseStorage storage;
+    private StorageReference gsRef;
 
     //constuctor
     public AtelierAdapter(Context c, List<Atelier> ateliers){
         this.context=c;
         this.listeAtelier=ateliers;
         this.inflater=LayoutInflater.from(c);
+        // permet de recuperer l'image
+        this.storage=FirebaseStorage.getInstance();
     }
 
     @Override
@@ -48,7 +60,7 @@ public class AtelierAdapter extends BaseAdapter {
     Atelier ateliercourant=getItem(position);
     String nomAtelier=ateliercourant.getNomAtelier();
     String adresseAtelier=ateliercourant.getAdresseAtelier();
-    Double noteAtelier=ateliercourant.getNoteAtelier();
+    Double noteAtelier=0.0;
 
     // Affectation des valeurs
         TextView tvNomAtelier=convertView.findViewById(R.id.tv_nom_atelier);
@@ -57,6 +69,16 @@ public class AtelierAdapter extends BaseAdapter {
         tvAdresseAtelier.setText(adresseAtelier);
         TextView tvNoteAtelier=convertView.findViewById(R.id.tv_contenu_note_atelier);
         tvNoteAtelier.setText(noteAtelier.toString());
+        //recuperation de l'image
+       if (ateliercourant.getUrlLogo() != "") {
+
+           Log.d("Information",  "logo " + ateliercourant.getUrlLogo());
+            gsRef = storage.getReferenceFromUrl(ateliercourant.getUrlLogo());
+            ImageView photo = convertView.findViewById(R.id.imLogo);
+            Glide.with(convertView.getContext())
+                    .load(gsRef)
+                    .into(photo);
+        }
         return convertView;
     }
 }

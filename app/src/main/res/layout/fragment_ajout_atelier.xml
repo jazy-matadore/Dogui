@@ -16,7 +16,7 @@
         tools:context=".FragmentAjoutAtelier">
 
         <TextView
-            android:paddingTop="300dp"
+
             android:id="@+id/renttextView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,14 +113,7 @@
             android:textColorHint="#FFFFFF"
             />
 
-        <Button
-            android:id="@+id/btnEnregistrerAtelier"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
 
-            android:layout_gravity="center|bottom"
-            android:text="@string/btn_enregistrer_atelier"
-            app:backgroundTint="#507A1F" />
 
 
     </LinearLayout>
