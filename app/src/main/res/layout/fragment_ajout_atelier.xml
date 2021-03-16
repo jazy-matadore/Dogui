@@ -111,7 +111,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textMultiLine|textPersonName"
-            android:text="@string/specialite_Atelier"
+            android:hint="@string/specialite_Atelier"
             android:background="@android:drawable/editbox_background"
             android:textColorHint="#FFFFFF"
             />
