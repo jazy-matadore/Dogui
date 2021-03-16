@@ -15,7 +15,8 @@
         android:id="@+id/iv_image_atelier"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_gravity="left" />
+        android:layout_gravity="left"
+        android:scaleType="fitXY"/>
 
         <Button
             android:id="@+id/btnCamera"

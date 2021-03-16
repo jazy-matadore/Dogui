@@ -74,7 +74,7 @@
             android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/editTextLongitude"
+            android:id="@+id/editTextLongitudeAtelier"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -86,7 +86,7 @@
             android:id="@+id/editTextLatitudeAtelier"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/editTextLongitude"
+            android:layout_toRightOf="@id/editTextLongitudeAtelier"
             android:ems="10"
             android:inputType="none|numberDecimal"
             android:hint="@string/latitude_Atelier"

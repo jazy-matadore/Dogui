@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ca.fatim.douguifirst">
+
+    //Implementation de permissions pour la camera
 <uses-permission android:name ="android.permission.CAMERA"/>
+
+    //Implementation de permissions pour les coordonnées GPS
+<uses-permission android:name="android.permission.Internet"/>
+<uses-permission android:name="android.permission.Access_Fine_location"/>
+<uses-permission android:name="android.permission.Access_Coarse_Location"/>
+
+
+
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
