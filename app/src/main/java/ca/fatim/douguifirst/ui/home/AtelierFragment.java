@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
@@ -26,6 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ca.fatim.douguifirst.AjoutAtelierActivity;
+import ca.fatim.douguifirst.DetailsAtelierActivity;
 import ca.fatim.douguifirst.R;
 import ca.fatim.douguifirst.adapters.AtelierAdapter;
 import ca.fatim.douguifirst.models.Atelier;
@@ -56,6 +58,16 @@ public class AtelierFragment extends Fragment {
                             ListView lvlisteAtelier = vw.findViewById(R.id.listeatelier);
 
                             lvlisteAtelier.setAdapter(new AtelierAdapter(context,listeAtelier));
+
+                            // Ajout du processus d'écoute sur le clic
+
+                            lvlisteAtelier.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                @Override
+                                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                                    Intent visiodetail =new Intent(view.getContext(), DetailsAtelierActivity.class);
+                                    startActivity(visiodetail);
+                                }
+                            });
                         } else {
                             Log.d("Erreur Data", "Error getting documents: ", task.getException());
                         }
