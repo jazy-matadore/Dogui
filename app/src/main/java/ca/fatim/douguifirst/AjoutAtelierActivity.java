@@ -30,6 +30,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import ca.fatim.douguifirst.models.Atelier;
+import ca.fatim.douguifirst.utilitaires.AfficheMessage;
 
 
 public class AjoutAtelierActivity extends AppCompatActivity {
@@ -98,7 +99,8 @@ public class AjoutAtelierActivity extends AppCompatActivity {
                 gps = new GeoPoint(latitudeAtelier, longitudeAtelier);
 
                 if (nomAtelier == "") {
-                    Toast.makeText(getApplicationContext(), "Il faut saisir le nom de l'atelier", Toast.LENGTH_LONG).show();
+                    // pour affichage du message
+                    AfficheMessage.afficheAlert("Le nom de l'atelier est obligatoire",AjoutAtelierActivity.this);
                     insertion = false;
                 }
 
@@ -137,7 +139,7 @@ public class AjoutAtelierActivity extends AppCompatActivity {
                                 public void onSuccess(DocumentReference documentReference) {
                                     Log.d("Insertion", "DocumentSnapshot successfully written!");
                                     // pour affichage du message
-                                    Toast.makeText(getApplicationContext(), "Insertion réussie", Toast.LENGTH_LONG).show();
+                                    AfficheMessage.afficheAlert("Insertion réussie",AjoutAtelierActivity.this);
                                 }
                             })
                             .addOnFailureListener(new OnFailureListener() {

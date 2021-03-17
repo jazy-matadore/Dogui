@@ -2,16 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ca.fatim.douguifirst">
 
-    //Implementation de permissions pour la camera
-<uses-permission android:name ="android.permission.CAMERA"/>
-
-    //Implementation de permissions pour les coordonnées GPS
-<uses-permission android:name="android.permission.Internet"/>
-<uses-permission android:name="android.permission.Access_Fine_location"/>
-<uses-permission android:name="android.permission.Access_Coarse_Location"/>
-
-
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.Internet" />
+    <uses-permission android:name="android.permission.Access_Fine_location" />
+    <uses-permission android:name="android.permission.Access_Coarse_Location" />
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -26,8 +20,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DOUGUIfirst">
-        <activity android:name="ca.fatim.douguifirst.AjoutAtelierActivity"></activity>
-
+        <activity android:name=".DetailsAtelierActivity"></activity>
+        <activity android:name=".AjoutAtelierActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
